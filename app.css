@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+
+  background: url(http://designoval.com/wp-content/uploads/2015/04/Cool-Backgrounds-Background-HD-Wallpaper.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+
+  color: #bbb;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.centered-text, .centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  margin: 0;
+}
+
+article {
+  position: relative;
+  min-height: 200px;
+  float: left;
+
+  background: rgba(80, 77, 106, 0.3);
+  text-align: center;
+  margin: 3rem 1rem;
+}
+
+.city {
+  width: calc(66.666% - 2rem);
+}
+
+.room {
+  width: calc(33.333% - 2rem);
+}
+
+.room img {
+  width: 35%;
+  max-width: 100px;
+  border-radius: 50%;
+  border: 4px #eee solid;
+}
+
+.room h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.room p {
+  margin: 8px auto;
+}
+
+.room::before {
+  content: '$' attr(data-price);
+
+  display: inline-block;
+  height: 2rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+
+  background: #444;
+
+  line-height: 2rem;
+  color: white;
+  text-align: left;
+}
